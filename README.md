@@ -1,2 +1,33 @@
-# -RM65_Robot_Workspace_Solver
-RM65_Robot_Workspace_Solver 项目旨在为 RM65 系列机械臂提供一个可视化和分析其工作空间的工具。该项目利用蒙特卡洛方法对机械臂的不同配置进行采样，并绘制其可达工作空间。此外，还集成了强化学习算法，以优化机械臂的控制策略，从而在动态环境中提升其性能。
+# RM65 Robot Workspace Solver
+
+This repository contains the implementation of a workspace solver for the RM65 series robot using the Monte Carlo method and reinforcement learning.
+
+## Overview
+
+The RM65 series robot is a 6-degree-of-freedom collaborative robot developed by Realman Intelligent Technology (Beijing) Co., Ltd. This project aims to provide tools for solving the workspace of the RM65 robot, leveraging the Monte Carlo method for sampling and reinforcement learning for optimization.
+
+## Features
+
+- Monte Carlo-based workspace solver
+- Reinforcement learning environment for the RM65 robot
+- Extensive testing and documentation
+- Support for RM65-B, RM65-ZF, and RM65-6F models
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8+
+- Virtual environment tools (e.g., venv, conda)
+- ROS Noetic
+- Gazebo
+
+### Installation
+
+Please refer to the [INSTALL.md](docs/INSTALL.md) for detailed installation instructions.
+
+### Usage
+
+To run the Monte Carlo workspace solver:
+```bash
+python src/main.py --mode monte_carlo
